@@ -18,9 +18,10 @@ L Connector_Generic:Conn_01x16 J1
 U 1 1 5D375C76
 P 8600 2000
 F 0 "J1" H 8519 975 50  0000 C CNN
-F 1 "feather long" H 8519 1066 50  0000 C CNN
+F 1 "Feather Long" H 8519 1066 50  0000 C CNN
 F 2 "KiCad/Connector_PinHeader_2.54mm.pretty:PinHeader_1x16_P2.54mm_Vertical" H 8600 2000 50  0001 C CNN
 F 3 "~" H 8600 2000 50  0001 C CNN
+F 4 "nofit" H 8600 2000 50  0001 C CNN "Config"
 	1    8600 2000
 	1    0    0    1   
 $EndComp
@@ -63,8 +64,10 @@ F 1 "MCP2551-I-SN" H 3200 5350 50  0000 C CNN
 F 2 "KiCad/Package_SO.pretty:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 4450 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 2800 4950 50  0001 C CNN
 F 4 "Microship" H 2800 4950 50  0001 C CNN "MFN"
-F 5 "MCP1703A-3302_SOT23" H 2800 4950 50  0001 C CNN "MFP"
+F 5 "MCP2551-I/SN" H 2800 4950 50  0001 C CNN "MFP"
 F 6 "3.3 V 250 mA upto 16 V input" H 2800 4950 50  0001 C CNN "Description"
+F 7 "Digikey" H 2800 4950 50  0001 C CNN "Vendor"
+F 8 "MCP2551-I/SN-ND" H 2800 4950 50  0001 C CNN "SKU"
 	1    2800 4950
 	-1   0    0    -1  
 $EndComp
@@ -76,6 +79,10 @@ F 0 "U1" H 9200 5300 50  0000 C CNN
 F 1 "DS3231MZ" H 9350 5200 50  0000 C CNN
 F 2 "KiCad/Package_SO.pretty:SOIC-8_3.9x4.9mm_P1.27mm" H 9050 4300 50  0001 C CNN
 F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf" H 9050 4200 50  0001 C CNN
+F 4 "Maxim" H 9050 4800 50  0001 C CNN "MFN"
+F 5 "DS3231MZ+" H 9050 4800 50  0001 C CNN "MFP"
+F 6 "Digikey" H 9050 4800 50  0001 C CNN "Vendor"
+F 7 "DS3231MZ+-ND " H 9050 4800 50  0001 C CNN "SKU"
 	1    9050 4800
 	1    0    0    -1  
 $EndComp
@@ -87,6 +94,10 @@ F 0 "BT1" V 8700 4250 50  0000 L CNN
 F 1 "CR1220" V 8700 3950 50  0000 L CNN
 F 2 "KiCad/Battery.pretty:BatteryHolder_LINX_BAT-HLD-012-SMT" V 8550 4160 50  0001 C CNN
 F 3 "~" V 8550 4160 50  0001 C CNN
+F 4 "Linx Technologies" H 8550 4100 50  0001 C CNN "MFN"
+F 5 "BAT-HLD-012-SMT-TR" H 8550 4100 50  0001 C CNN "MFP"
+F 6 "Digikey" H 8550 4100 50  0001 C CNN "Vendor"
+F 7 "BAT-HLD-012-SMTCT-ND" H 8550 4100 50  0001 C CNN "SKU"
 	1    8550 4100
 	0    1    1    0   
 $EndComp
@@ -156,6 +167,7 @@ F 0 "C2" H 4415 2046 50  0000 L CNN
 F 1 "1uF" H 4415 1955 50  0000 L CNN
 F 2 "KiCad/Capacitor_SMD.pretty:C_0603_1608Metric" H 4338 1850 50  0001 C CNN
 F 3 "~" H 4300 2000 50  0001 C CNN
+F 4 "X5R 20V" H 4300 2000 50  0001 C CNN "Characteristics"
 	1    4300 2000
 	1    0    0    -1  
 $EndComp
@@ -290,6 +302,8 @@ F 4 "Kingbright" H 3850 3950 60  0001 C CNN "MFN"
 F 5 "APT1608LSECK/J4-PRV " H 3850 3950 60  0001 C CNN "MFP"
 F 6 "Orange 605nm LED Indication - Discrete 1.8V 2mA 0603 (1608 Metric)" H 3850 3950 60  0001 C CNN "Description"
 F 7 "Orange" H 3850 3950 50  0001 C CNN "Characteristics"
+F 8 "754-1931-1-ND " H 3850 3950 50  0001 C CNN "SKU"
+F 9 "Digikey" H 3850 3950 50  0001 C CNN "Vendor"
 	1    3850 3950
 	0    -1   -1   0   
 $EndComp
@@ -475,6 +489,7 @@ F 1 "INT" H 4600 5564 50  0001 C CNN
 F 2 "KiCad/Jumper.pretty:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4600 5450 50  0001 C CNN
 F 3 "~" H 4600 5450 50  0001 C CNN
 F 4 "nofit" H 4600 5450 50  0001 C CNN "Config"
+F 5 "Cut to remove INT connection to Feather" H 4600 5450 50  0001 C CNN "Notes"
 	1    4600 5450
 	1    0    0    -1  
 $EndComp
@@ -512,6 +527,7 @@ F 0 "C5" V 8750 3900 50  0000 L CNN
 F 1 "100nF" V 8750 3650 50  0000 L CNN
 F 2 "KiCad/Capacitor_SMD.pretty:C_0603_1608Metric" H 8638 3650 50  0001 C CNN
 F 3 "~" H 8600 3800 50  0001 C CNN
+F 4 "X7R 6V" H 8600 3800 50  0001 C CNN "Characteristics"
 	1    8600 3800
 	0    1    1    0   
 $EndComp
@@ -586,6 +602,7 @@ F 1 "TERM" V 2145 5318 50  0000 L CNN
 F 2 "KiCad/Jumper.pretty:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2100 5250 50  0001 C CNN
 F 3 "~" H 2100 5250 50  0001 C CNN
 F 4 "nofit" H 2100 5250 50  0001 C CNN "Config"
+F 5 "Link to bring termination resistor in circuit" H 2100 5250 50  0001 C CNN "Notes"
 	1    2100 5250
 	0    1    1    0   
 $EndComp
@@ -611,6 +628,7 @@ F 0 "C1" H 2965 2046 50  0000 L CNN
 F 1 "1uF" H 2965 1955 50  0000 L CNN
 F 2 "KiCad/Capacitor_SMD.pretty:C_0603_1608Metric" H 2888 1850 50  0001 C CNN
 F 3 "~" H 2850 2000 50  0001 C CNN
+F 4 "X5R 20V" H 2850 2000 50  0001 C CNN "Characteristics"
 	1    2850 2000
 	1    0    0    -1  
 $EndComp
@@ -649,7 +667,7 @@ L Device:LED D3
 U 1 1 5AB185A2
 P 5700 1400
 F 0 "D3" H 5700 1500 50  0000 C CNN
-F 1 "Green" H 5700 1300 50  0000 C CNN
+F 1 "PWR" H 5700 1300 50  0000 C CNN
 F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 5700 1400 50  0001 C CNN
 F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LZGCK.pdf" H 5700 1400 50  0001 C CNN
 F 4 "Kingbright" H 5700 1400 60  0001 C CNN "MFN"
@@ -683,9 +701,10 @@ L Connector_Generic:Conn_01x12 J2
 U 1 1 5D375CC4
 P 9000 2200
 F 0 "J2" H 8920 1375 50  0000 C CNN
-F 1 "feather short" H 8920 1466 50  0000 C CNN
+F 1 "Feather Short" H 8920 1466 50  0000 C CNN
 F 2 "KiCad/Connector_PinHeader_2.54mm.pretty:PinHeader_1x12_P2.54mm_Vertical" H 9000 2200 50  0001 C CNN
 F 3 "~" H 9000 2200 50  0001 C CNN
+F 4 "nofit" H 9000 2200 50  0001 C CNN "Config"
 	1    9000 2200
 	-1   0    0    1   
 $EndComp
@@ -711,6 +730,7 @@ F 0 "C4" H 7065 5596 50  0000 L CNN
 F 1 "8pF" H 7065 5505 50  0000 L CNN
 F 2 "KiCad/Capacitor_SMD.pretty:C_0603_1608Metric" H 6988 5400 50  0001 C CNN
 F 3 "~" H 6950 5550 50  0001 C CNN
+F 4 "NPO 6V" H 6950 5550 50  0001 C CNN "Characteristics"
 	1    6950 5550
 	-1   0    0    1   
 $EndComp
@@ -727,6 +747,7 @@ F 0 "C3" H 6665 5996 50  0000 L CNN
 F 1 "8pF" H 6665 5905 50  0000 L CNN
 F 2 "KiCad/Capacitor_SMD.pretty:C_0603_1608Metric" H 6588 5800 50  0001 C CNN
 F 3 "~" H 6550 5950 50  0001 C CNN
+F 4 "NPO 6V" H 6550 5950 50  0001 C CNN "Characteristics"
 	1    6550 5950
 	-1   0    0    1   
 $EndComp
@@ -793,6 +814,7 @@ F 0 "C6" V 5900 4050 50  0000 L CNN
 F 1 "100nF" V 5900 3800 50  0000 L CNN
 F 2 "KiCad/Capacitor_SMD.pretty:C_0603_1608Metric" H 5788 3800 50  0001 C CNN
 F 3 "~" H 5750 3950 50  0001 C CNN
+F 4 "X7R 6V" H 5750 3950 50  0001 C CNN "Characteristics"
 	1    5750 3950
 	0    1    1    0   
 $EndComp
@@ -826,6 +848,8 @@ F 2 "KiCad/Connector_Molex.pretty:Molex_PicoBlade_53261-0471_1x04-1MP_P1.25mm_Ho
 F 3 "~" H 1400 2900 50  0001 C CNN
 F 4 "Molex" H 1400 2900 50  0001 C CNN "MFN"
 F 5 "53261-0471" H 1400 2900 50  0001 C CNN "MFP"
+F 6 "Digikey" H 1400 2900 50  0001 C CNN "Vendor"
+F 7 "WM7622CT-ND" H 1400 2900 50  0001 C CNN "SKU"
 	1    1400 2900
 	1    0    0    -1  
 $EndComp
