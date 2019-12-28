@@ -15,4 +15,3 @@
 # Availability
 
 I have some bare boards in fabrication at the moment, which I plan to hand-assemble for my own use. If there is interest, I will get an assembly run done (unless it wins the competition of course!) after this validation.
-
