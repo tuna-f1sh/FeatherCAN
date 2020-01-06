@@ -63,7 +63,7 @@ F 0 "U3" H 3200 5450 50  0000 C CNN
 F 1 "MCP2551-I-SN" H 3200 5350 50  0000 C CNN
 F 2 "KiCad/Package_SO.pretty:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 4450 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 2800 4950 50  0001 C CNN
-F 4 "Microship" H 2800 4950 50  0001 C CNN "MFN"
+F 4 "Microchip Technology" H 2800 4950 50  0001 C CNN "MFN"
 F 5 "MCP2551-I/SN" H 2800 4950 50  0001 C CNN "MFP"
 F 6 "3.3 V 250 mA upto 16 V input" H 2800 4950 50  0001 C CNN "Description"
 F 7 "Digikey" H 2800 4950 50  0001 C CNN "Vendor"
@@ -144,14 +144,14 @@ F 3 "" H 5450 2400 50  0001 C CNN
 $EndComp
 Connection ~ 5450 1700
 $Comp
-L Regulator_Linear:MCP1703A-3302_SOT23 U4
+L Regulator_Linear:MCP1700-5002E_SOT23 U4
 U 1 1 5AB155FD
 P 4700 1700
 F 0 "U4" H 4550 1825 50  0000 C CNN
 F 1 "5V" H 4500 1900 50  0000 L CNN
 F 2 "KiCad/Package_TO_SOT_SMD.pretty:SOT-23" H 4700 1900 50  0001 C CNN
 F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en530937" H 4700 1650 50  0001 C CNN
-F 4 "Microchip" H 4700 1700 60  0001 C CNN "MFN"
+F 4 "Microchip Technology" H 4700 1700 60  0001 C CNN "MFN"
 F 5 "MCP1703T-5002E/CB" H 4700 1700 60  0001 C CNN "MFP"
 F 6 "5 V LDO" H 4700 1700 60  0001 C CNN "Description"
 F 7 "Digikey" H 4700 1700 50  0001 C CNN "Vendor"
@@ -183,6 +183,10 @@ F 0 "U2" H 5050 6350 50  0000 C CNN
 F 1 "MCP2515-xST" H 5050 6250 50  0000 C CNN
 F 2 "KiCad/Package_SO.pretty:TSSOP-20_4.4x6.5mm_P0.65mm" H 5400 4550 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 5500 4650 50  0001 C CNN
+F 4 "Microchip Technology" H 5400 5450 50  0001 C CNN "MFN"
+F 5 "MCP2515T-I/ST" H 5400 5450 50  0001 C CNN "MFP"
+F 6 "MCP2515T-I/STCT-ND" H 5400 5450 50  0001 C CNN "SKU"
+F 7 "Digikey" H 5400 5450 50  0001 C CNN "Vendor"
 	1    5400 5450
 	-1   0    0    -1  
 $EndComp
