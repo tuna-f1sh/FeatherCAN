@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "FeatherCAN"
-Date "2019-12-23"
-Rev "1.0"
+Date "2020-01-22"
+Rev "1.1"
 Comp "JBR Engineering Research Ltd"
 Comment1 "J. Whittington 2019"
 Comment2 ""
@@ -182,7 +182,7 @@ P 5400 5450
 F 0 "U2" H 5050 6350 50  0000 C CNN
 F 1 "MCP2515-xST" H 5050 6250 50  0000 C CNN
 F 2 "KiCad/Package_SO.pretty:TSSOP-20_4.4x6.5mm_P0.65mm" H 5400 4550 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 5500 4650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf" H 5500 4650 50  0001 C CNN
 F 4 "Microchip Technology" H 5400 5450 50  0001 C CNN "MFN"
 F 5 "MCP2515T-I/ST" H 5400 5450 50  0001 C CNN "MFP"
 F 6 "MCP2515T-I/STCT-ND" H 5400 5450 50  0001 C CNN "SKU"
@@ -337,17 +337,6 @@ F 3 "" H 5400 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 3700 5400 3950
-$Comp
-L power:VCC #PWR0110
-U 1 1 5E02BB71
-P 2800 3700
-F 0 "#PWR0110" H 2800 3550 50  0001 C CNN
-F 1 "VCC" H 2800 3850 50  0000 C CNN
-F 2 "" H 2800 3700 50  0001 C CNN
-F 3 "" H 2800 3700 50  0001 C CNN
-	1    2800 3700
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 5E02DE0F
@@ -1108,4 +1097,15 @@ Wire Wire Line
 Connection ~ 4175 4850
 Wire Wire Line
 	4175 4850 4800 4850
+$Comp
+L power:+5V #PWR0110
+U 1 1 5E2A847B
+P 2800 3700
+F 0 "#PWR0110" H 2800 3550 50  0001 C CNN
+F 1 "+5V" H 2815 3873 50  0000 C CNN
+F 2 "" H 2800 3700 50  0001 C CNN
+F 3 "" H 2800 3700 50  0001 C CNN
+	1    2800 3700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
