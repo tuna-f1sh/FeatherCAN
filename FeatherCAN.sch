@@ -212,8 +212,51 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR0105
 U 1 1 5E018A7F
+P 3500 3700
+F 0 "#PWR0105" H 3500 3550 50  0001 C CNN
+F 1 "VCC" H 3500 3850 50  0000 C CNN
+F 2 "" H 3500 3700 50  0001 C CNN
+F 3 "" H 3500 3700 50  0001 C CNN
+	1    3500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5E018A85
+P 3500 4300
+F 0 "R3" H 3530 4320 50  0000 L CNN
+F 1 "1k" H 3530 4260 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0603_1608Metric" H 3500 4300 50  0001 C CNN
+F 3 "" H 3500 4300 50  0001 C CNN
+	1    3500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3700 3500 3800
+Wire Wire Line
+	3500 4100 3500 4200
+$Comp
+L Device:LED D2
+U 1 1 5E021C73
+P 3850 3950
+F 0 "D2" H 3850 4050 50  0000 C CNN
+F 1 "RXD" H 3850 3850 50  0000 C CNN
+F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 3850 3950 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LSECK-J4-PRV.pdf" H 3850 3950 50  0001 C CNN
+F 4 "Kingbright" H 3850 3950 60  0001 C CNN "MFN"
+F 5 "APT1608LSECK/J4-PRV " H 3850 3950 60  0001 C CNN "MFP"
+F 6 "Orange 605nm LED Indication - Discrete 1.8V 2mA 0603 (1608 Metric) " H 3850 3950 60  0001 C CNN "Description"
+F 7 "Orange" H 3850 3950 50  0001 C CNN "Characteristics"
+F 8 "Digikey" H 3850 3950 50  0001 C CNN "Vendor"
+F 9 "754-1931-1-ND " H 3850 3950 50  0001 C CNN "SKU"
+	1    3850 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 5E021C79
 P 3850 3700
-F 0 "#PWR0105" H 3850 3550 50  0001 C CNN
+F 0 "#PWR0106" H 3850 3550 50  0001 C CNN
 F 1 "VCC" H 3850 3850 50  0000 C CNN
 F 2 "" H 3850 3700 50  0001 C CNN
 F 3 "" H 3850 3700 50  0001 C CNN
@@ -221,10 +264,10 @@ F 3 "" H 3850 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R3
-U 1 1 5E018A85
+L Device:R_Small R4
+U 1 1 5E021C7F
 P 3850 4300
-F 0 "R3" H 3880 4320 50  0000 L CNN
+F 0 "R4" H 3880 4320 50  0000 L CNN
 F 1 "1k" H 3880 4260 50  0000 L CNN
 F 2 "KiCad/Resistor_SMD.pretty:R_0603_1608Metric" H 3850 4300 50  0001 C CNN
 F 3 "" H 3850 4300 50  0001 C CNN
@@ -236,63 +279,20 @@ Wire Wire Line
 Wire Wire Line
 	3850 4100 3850 4200
 $Comp
-L Device:LED D2
-U 1 1 5E021C73
-P 4200 3950
-F 0 "D2" H 4200 4050 50  0000 C CNN
-F 1 "RXD" H 4200 3850 50  0000 C CNN
-F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 4200 3950 50  0001 C CNN
-F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LSECK-J4-PRV.pdf" H 4200 3950 50  0001 C CNN
-F 4 "Kingbright" H 4200 3950 60  0001 C CNN "MFN"
-F 5 "APT1608LSECK/J4-PRV " H 4200 3950 60  0001 C CNN "MFP"
-F 6 "Orange 605nm LED Indication - Discrete 1.8V 2mA 0603 (1608 Metric) " H 4200 3950 60  0001 C CNN "Description"
-F 7 "Orange" H 4200 3950 50  0001 C CNN "Characteristics"
-F 8 "Digikey" H 4200 3950 50  0001 C CNN "Vendor"
-F 9 "754-1931-1-ND " H 4200 3950 50  0001 C CNN "SKU"
-	1    4200 3950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:VCC #PWR0106
-U 1 1 5E021C79
-P 4200 3700
-F 0 "#PWR0106" H 4200 3550 50  0001 C CNN
-F 1 "VCC" H 4200 3850 50  0000 C CNN
-F 2 "" H 4200 3700 50  0001 C CNN
-F 3 "" H 4200 3700 50  0001 C CNN
-	1    4200 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 5E021C7F
-P 4200 4300
-F 0 "R4" H 4230 4320 50  0000 L CNN
-F 1 "1k" H 4230 4260 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0603_1608Metric" H 4200 4300 50  0001 C CNN
-F 3 "" H 4200 4300 50  0001 C CNN
-	1    4200 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 3700 4200 3800
-Wire Wire Line
-	4200 4100 4200 4200
-$Comp
 L Device:LED D1
 U 1 1 5DFF2E6B
-P 3850 3950
-F 0 "D1" H 3850 4050 50  0000 C CNN
-F 1 "TXD" H 3850 3850 50  0000 C CNN
-F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 3850 3950 50  0001 C CNN
-F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LSECK-J4-PRV.pdf" H 3850 3950 50  0001 C CNN
-F 4 "Kingbright" H 3850 3950 60  0001 C CNN "MFN"
-F 5 "APT1608LSECK/J4-PRV " H 3850 3950 60  0001 C CNN "MFP"
-F 6 "Orange 605nm LED Indication - Discrete 1.8V 2mA 0603 (1608 Metric)" H 3850 3950 60  0001 C CNN "Description"
-F 7 "Orange" H 3850 3950 50  0001 C CNN "Characteristics"
-F 8 "754-1931-1-ND " H 3850 3950 50  0001 C CNN "SKU"
-F 9 "Digikey" H 3850 3950 50  0001 C CNN "Vendor"
-	1    3850 3950
+P 3500 3950
+F 0 "D1" H 3500 4050 50  0000 C CNN
+F 1 "TXD" H 3500 3850 50  0000 C CNN
+F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 3500 3950 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LSECK-J4-PRV.pdf" H 3500 3950 50  0001 C CNN
+F 4 "Kingbright" H 3500 3950 60  0001 C CNN "MFN"
+F 5 "APT1608LSECK/J4-PRV " H 3500 3950 60  0001 C CNN "MFP"
+F 6 "Orange 605nm LED Indication - Discrete 1.8V 2mA 0603 (1608 Metric)" H 3500 3950 60  0001 C CNN "Description"
+F 7 "Orange" H 3500 3950 50  0001 C CNN "Characteristics"
+F 8 "754-1931-1-ND " H 3500 3950 50  0001 C CNN "SKU"
+F 9 "Digikey" H 3500 3950 50  0001 C CNN "Vendor"
+	1    3500 3950
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -552,8 +552,6 @@ Wire Wire Line
 	9050 3800 9050 4400
 NoConn ~ 9200 1600
 NoConn ~ 9200 1700
-NoConn ~ 9200 2200
-NoConn ~ 9200 2300
 NoConn ~ 8400 2500
 NoConn ~ 8400 2600
 NoConn ~ 8400 2100
@@ -697,19 +695,17 @@ F 4 "nofit" H 9000 2200 50  0001 C CNN "Config"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3850 4750 3300 4750
+	3500 4750 3300 4750
 Wire Wire Line
-	4650 4750 3850 4750
-Connection ~ 3850 4750
+	4650 4750 4100 4750
+Connection ~ 3500 4750
 Wire Wire Line
-	3850 4400 3850 4750
+	3500 4400 3500 4750
 Wire Wire Line
-	4200 4850 3300 4850
+	3850 4850 3300 4850
+Connection ~ 3850 4850
 Wire Wire Line
-	4800 4850 4200 4850
-Connection ~ 4200 4850
-Wire Wire Line
-	4200 4400 4200 4850
+	3850 4400 3850 4850
 $Comp
 L Device:C C4
 U 1 1 5E184ECB
@@ -1054,4 +1050,62 @@ $EndComp
 Wire Wire Line
 	3175 1700 3650 1700
 Connection ~ 3650 1700
+Wire Wire Line
+	9200 2300 9450 2300
+Wire Wire Line
+	9200 2200 9450 2200
+Text Label 9450 2200 2    50   ~ 0
+FC_TX
+Text Label 9450 2300 2    50   ~ 0
+FC_RX
+Connection ~ 4100 4750
+Wire Wire Line
+	4100 4750 3500 4750
+Text Label 4925 4200 2    50   ~ 0
+FC_TX
+Text Label 4925 4350 2    50   ~ 0
+FC_RX
+$Comp
+L Jumper:SolderJumper_2_Bridged JP3
+U 1 1 5E2A57BA
+P 4450 4200
+F 0 "JP3" H 4575 4250 50  0000 C CNN
+F 1 "INT" H 4450 4314 50  0001 C CNN
+F 2 "KiCad/Jumper.pretty:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4450 4200 50  0001 C CNN
+F 3 "~" H 4450 4200 50  0001 C CNN
+F 4 "nofit" H 4450 4200 50  0001 C CNN "Config"
+F 5 "Cut to remove INT connection to Feather" H 4450 4200 50  0001 C CNN "Notes"
+	1    4450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP4
+U 1 1 5E2BEBB3
+P 4450 4350
+F 0 "JP4" H 4575 4400 50  0000 C CNN
+F 1 "INT" H 4450 4464 50  0001 C CNN
+F 2 "KiCad/Jumper.pretty:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4450 4350 50  0001 C CNN
+F 3 "~" H 4450 4350 50  0001 C CNN
+F 4 "nofit" H 4450 4350 50  0001 C CNN "Config"
+F 5 "Cut to remove INT connection to Feather" H 4450 4350 50  0001 C CNN "Notes"
+	1    4450 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4200 4300 4200
+Wire Wire Line
+	4100 4200 4100 4750
+Wire Wire Line
+	4600 4200 4925 4200
+Wire Wire Line
+	4600 4350 4925 4350
+Wire Wire Line
+	3850 4850 4175 4850
+Wire Wire Line
+	4300 4350 4175 4350
+Wire Wire Line
+	4175 4350 4175 4850
+Connection ~ 4175 4850
+Wire Wire Line
+	4175 4850 4800 4850
 $EndSCHEMATC
