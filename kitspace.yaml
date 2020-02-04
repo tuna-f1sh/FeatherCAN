@@ -1,0 +1,3 @@
+summary: Feather Wing with SPI CAN controller, transceiver, 5 V regulator and RTC with back-up battery. Includes transceiver breakout for STM32 compatibility.
+site: https://github.com/tuna-f1sh/FeatherCAN
+color: black

@@ -129,20 +129,6 @@ F 3 "" H 4350 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4350 2000 4350 2400
-Wire Wire Line
-	4650 1700 5100 1700
-$Comp
-L power:GND #PWR0103
-U 1 1 5E08A9F1
-P 5100 2400
-F 0 "#PWR0103" H 5100 2150 50  0001 C CNN
-F 1 "GND" H 5100 2250 50  0000 C CNN
-F 2 "" H 5100 2400 50  0001 C CNN
-F 3 "" H 5100 2400 50  0001 C CNN
-	1    5100 2400
-	1    0    0    -1  
-$EndComp
-Connection ~ 5100 1700
 $Comp
 L Regulator_Linear:MCP1700-5002E_SOT23 U4
 U 1 1 5AB155FD
@@ -159,22 +145,6 @@ F 8 "MCP1703T-5002E/CBCT-ND" H 4350 1700 50  0001 C CNN "SKU"
 	1    4350 1700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C2
-U 1 1 5DA6480B
-P 5100 2050
-F 0 "C2" H 5215 2096 50  0000 L CNN
-F 1 "1uF" H 5215 2005 50  0000 L CNN
-F 2 "KiCad/Capacitor_SMD.pretty:C_0603_1608Metric" H 5138 1900 50  0001 C CNN
-F 3 "~" H 5100 2050 50  0001 C CNN
-F 4 "X5R 20V" H 5100 2050 50  0001 C CNN "Characteristics"
-	1    5100 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 1700 5100 1900
-Wire Wire Line
-	5100 2200 5100 2400
 $Comp
 L Interface_CAN_LIN:MCP2515-xST U2
 U 1 1 5DEA8045
@@ -557,18 +527,6 @@ Wire Wire Line
 	8050 1500 8050 1700
 Connection ~ 8050 2700
 $Comp
-L Device:R_Small R1
-U 1 1 5E14102C
-P 2100 5550
-F 0 "R1" H 2130 5570 50  0000 L CNN
-F 1 "120R" H 2130 5510 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0603_1608Metric" H 2100 5550 50  0001 C CNN
-F 3 "" H 2100 5550 50  0001 C CNN
-F 4 "Rterm" H 1950 5550 50  0000 C CNN "Description"
-	1    2100 5550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5E142196
 P 2100 5250
@@ -608,50 +566,48 @@ F 4 "X5R 20V" H 3650 2050 50  0001 C CNN "Characteristics"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 1700 5500 1700
-Wire Wire Line
-	6850 1900 6850 2400
+	5950 1900 5950 2400
 $Comp
 L power:GND #PWR0116
 U 1 1 5E08A9F4
-P 6850 2400
-F 0 "#PWR0116" H 6850 2150 50  0001 C CNN
-F 1 "GND" H 6850 2250 50  0000 C CNN
-F 2 "" H 6850 2400 50  0001 C CNN
-F 3 "" H 6850 2400 50  0001 C CNN
-	1    6850 2400
+P 5950 2400
+F 0 "#PWR0116" H 5950 2150 50  0001 C CNN
+F 1 "GND" H 5950 2250 50  0000 C CNN
+F 2 "" H 5950 2400 50  0001 C CNN
+F 3 "" H 5950 2400 50  0001 C CNN
+	1    5950 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 1600 6850 1700
+	5950 1600 5950 1700
 Wire Wire Line
-	6850 1200 6850 1300
+	5950 1200 5950 1300
 $Comp
 L Device:R_Small R5
 U 1 1 5E08A9F3
-P 6850 1800
-F 0 "R5" H 6880 1820 50  0000 L CNN
-F 1 "1k" H 6880 1760 50  0000 L CNN
-F 2 "KiCad/Resistor_SMD.pretty:R_0603_1608Metric" H 6850 1800 50  0001 C CNN
-F 3 "" H 6850 1800 50  0001 C CNN
-	1    6850 1800
+P 5950 1800
+F 0 "R5" H 5980 1820 50  0000 L CNN
+F 1 "1k" H 5980 1760 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0603_1608Metric" H 5950 1800 50  0001 C CNN
+F 3 "" H 5950 1800 50  0001 C CNN
+	1    5950 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D3
 U 1 1 5E08A9F2
-P 6850 1450
-F 0 "D3" H 6850 1550 50  0000 C CNN
-F 1 "PWR" H 6850 1350 50  0000 C CNN
-F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 6850 1450 50  0001 C CNN
-F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LZGCK.pdf" H 6850 1450 50  0001 C CNN
-F 4 "Kingbright" H 6850 1450 60  0001 C CNN "MFN"
-F 5 "APT1608LZGCK" H 6850 1450 60  0001 C CNN "MFP"
-F 6 "Green 525nm LED Indication - Discrete 2.65V 2mA 0603 (1608 Metric)" H 6850 1450 60  0001 C CNN "Description"
-F 7 "Green" H 6850 1450 50  0001 C CNN "Characteristics"
-F 8 "Digikey" H 6850 1450 50  0001 C CNN "Vendor"
-F 9 "754-1934-1-ND " H 6850 1450 50  0001 C CNN "SKU"
-	1    6850 1450
+P 5950 1450
+F 0 "D3" H 5950 1550 50  0000 C CNN
+F 1 "PWR" H 5950 1350 50  0000 C CNN
+F 2 "KiCad/LED_SMD.pretty:LED_0603_1608Metric" H 5950 1450 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LZGCK.pdf" H 5950 1450 50  0001 C CNN
+F 4 "Kingbright" H 5950 1450 60  0001 C CNN "MFN"
+F 5 "APT1608LZGCK" H 5950 1450 60  0001 C CNN "MFP"
+F 6 "Green 525nm LED Indication - Discrete 2.65V 2mA 0603 (1608 Metric)" H 5950 1450 60  0001 C CNN "Description"
+F 7 "Green" H 5950 1450 50  0001 C CNN "Characteristics"
+F 8 "Digikey" H 5950 1450 50  0001 C CNN "Vendor"
+F 9 "754-1934-1-ND " H 5950 1450 50  0001 C CNN "SKU"
+	1    5950 1450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -749,23 +705,23 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR03
 U 1 1 5E1A2521
-P 5500 1200
-F 0 "#PWR03" H 5500 1050 50  0001 C CNN
-F 1 "+5V" H 5515 1373 50  0000 C CNN
-F 2 "" H 5500 1200 50  0001 C CNN
-F 3 "" H 5500 1200 50  0001 C CNN
-	1    5500 1200
+P 5375 1200
+F 0 "#PWR03" H 5375 1050 50  0001 C CNN
+F 1 "+5V" H 5390 1373 50  0000 C CNN
+F 2 "" H 5375 1200 50  0001 C CNN
+F 3 "" H 5375 1200 50  0001 C CNN
+	1    5375 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR04
 U 1 1 5E1A2EA6
-P 6850 1200
-F 0 "#PWR04" H 6850 1050 50  0001 C CNN
-F 1 "+5V" H 6865 1373 50  0000 C CNN
-F 2 "" H 6850 1200 50  0001 C CNN
-F 3 "" H 6850 1200 50  0001 C CNN
-	1    6850 1200
+P 5950 1200
+F 0 "#PWR04" H 5950 1050 50  0001 C CNN
+F 1 "+5V" H 5965 1373 50  0000 C CNN
+F 2 "" H 5950 1200 50  0001 C CNN
+F 3 "" H 5950 1200 50  0001 C CNN
+	1    5950 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -862,7 +818,7 @@ F 4 "nofit" H 1400 1750 50  0001 C CNN "Config"
 $EndComp
 Text Label 3175 1700 2    50   ~ 0
 VIN
-Text Notes 2975 1550 0    50   Italic 0
+Text Notes 2875 1550 0    50   Italic 0
 5-16 V
 Wire Wire Line
 	1600 1650 1950 1650
@@ -936,20 +892,8 @@ Wire Wire Line
 Connection ~ 3850 1700
 Wire Wire Line
 	3850 1700 4050 1700
-$Comp
-L power:PWR_FLAG #FLG0104
-U 1 1 5E22F9C4
-P 8950 4100
-F 0 "#FLG0104" H 8950 4175 50  0001 C CNN
-F 1 "PWR_FLAG" H 8950 4274 50  0001 C CNN
-F 2 "" H 8950 4100 50  0001 C CNN
-F 3 "~" H 8950 4100 50  0001 C CNN
-	1    8950 4100
-	1    0    0    -1  
-$EndComp
-Connection ~ 8950 4100
 Wire Wire Line
-	5500 1200 5500 1700
+	5375 1200 5375 1700
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5E2344EB
@@ -1037,9 +981,6 @@ F 3 "" H 4550 5775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3175 1700 3650 1700
-Connection ~ 3650 1700
-Wire Wire Line
 	9200 2300 9450 2300
 Wire Wire Line
 	9200 2200 9450 2200
@@ -1055,12 +996,12 @@ FC_TX
 Text Label 4925 4350 2    50   ~ 0
 FC_RX
 $Comp
-L Jumper:SolderJumper_2_Bridged JP3
+L Jumper:SolderJumper_2_Open JP3
 U 1 1 5E2A57BA
 P 4450 4200
 F 0 "JP3" H 4575 4250 50  0000 C CNN
 F 1 "INT" H 4450 4314 50  0001 C CNN
-F 2 "KiCad/Jumper.pretty:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4450 4200 50  0001 C CNN
+F 2 "KiCad/Jumper.pretty:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4450 4200 50  0001 C CNN
 F 3 "~" H 4450 4200 50  0001 C CNN
 F 4 "nofit" H 4450 4200 50  0001 C CNN "Config"
 F 5 "Cut to remove INT connection to Feather" H 4450 4200 50  0001 C CNN "Notes"
@@ -1068,12 +1009,12 @@ F 5 "Cut to remove INT connection to Feather" H 4450 4200 50  0001 C CNN "Notes"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP4
+L Jumper:SolderJumper_2_Open JP4
 U 1 1 5E2BEBB3
 P 4450 4350
 F 0 "JP4" H 4575 4400 50  0000 C CNN
 F 1 "INT" H 4450 4464 50  0001 C CNN
-F 2 "KiCad/Jumper.pretty:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4450 4350 50  0001 C CNN
+F 2 "KiCad/Jumper.pretty:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4450 4350 50  0001 C CNN
 F 3 "~" H 4450 4350 50  0001 C CNN
 F 4 "nofit" H 4450 4350 50  0001 C CNN "Config"
 F 5 "Cut to remove INT connection to Feather" H 4450 4350 50  0001 C CNN "Notes"
@@ -1108,4 +1049,109 @@ F 3 "" H 2800 3700 50  0001 C CNN
 	1    2800 3700
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+BATT #PWR0117
+U 1 1 5E29B53C
+P 8950 4100
+F 0 "#PWR0117" H 8950 3950 50  0001 C CNN
+F 1 "+BATT" H 8925 4250 50  0000 C CNN
+F 2 "" H 8950 4100 50  0001 C CNN
+F 3 "" H 8950 4100 50  0001 C CNN
+	1    8950 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 8950 4100
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5E29D75D
+P 9975 4100
+F 0 "TP1" H 9917 4126 50  0000 R CNN
+F 1 "RTC_BAT" H 9917 4217 50  0000 R CNN
+F 2 "KiCad/TestPoint.pretty:TestPoint_Pad_D2.5mm" H 10175 4100 50  0001 C CNN
+F 3 "~" H 10175 4100 50  0001 C CNN
+F 4 "nofit" H 9975 4100 50  0001 C CNN "Config"
+	1    9975 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+BATT #PWR0119
+U 1 1 5E29EF81
+P 9975 4100
+F 0 "#PWR0119" H 9975 3950 50  0001 C CNN
+F 1 "+BATT" H 9950 4250 50  0000 C CNN
+F 2 "" H 9975 4100 50  0001 C CNN
+F 3 "" H 9975 4100 50  0001 C CNN
+	1    9975 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5E14102C
+P 2100 5550
+F 0 "R1" H 2130 5570 50  0000 L CNN
+F 1 "120R" H 2130 5510 50  0000 L CNN
+F 2 "KiCad/Resistor_SMD.pretty:R_0603_1608Metric" H 2100 5550 50  0001 C CNN
+F 3 "" H 2100 5550 50  0001 C CNN
+F 4 "Rterm" H 1950 5550 50  0000 C CNN "Description"
+F 5 "1%" H 2100 5550 50  0001 C CNN "Characteristics"
+	1    2100 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 1700
+Wire Wire Line
+	4650 1700 5050 1700
+Wire Wire Line
+	5050 2200 5050 2400
+Wire Wire Line
+	5050 1700 5050 1900
+$Comp
+L Device:C C2
+U 1 1 5DA6480B
+P 5050 2050
+F 0 "C2" H 5165 2096 50  0000 L CNN
+F 1 "1uF" H 5165 2005 50  0000 L CNN
+F 2 "KiCad/Capacitor_SMD.pretty:C_0603_1608Metric" H 5088 1900 50  0001 C CNN
+F 3 "~" H 5050 2050 50  0001 C CNN
+F 4 "X5R 20V" H 5050 2050 50  0001 C CNN "Characteristics"
+	1    5050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E08A9F1
+P 5050 2400
+F 0 "#PWR0103" H 5050 2150 50  0001 C CNN
+F 1 "GND" H 5050 2250 50  0000 C CNN
+F 2 "" H 5050 2400 50  0001 C CNN
+F 3 "" H 5050 2400 50  0001 C CNN
+	1    5050 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 1700
+Wire Wire Line
+	5050 1700 5375 1700
+$Comp
+L Device:D_Small D4
+U 1 1 5E343F8B
+P 3400 1700
+F 0 "D4" H 3350 1600 50  0000 L CNN
+F 1 "40V 200mA" H 3160 1600 50  0001 L CNN
+F 2 "KiCad/Diode_SMD.pretty:D_0603_1608Metric" V 3400 1700 50  0001 C CNN
+F 3 "~" V 3400 1700 50  0001 C CNN
+F 4 "Diode Schottky 40V 200mA (DC) Surface Mount 0603 (1608 Metric)" H 3400 1700 50  0001 C CNN "Description"
+F 5 "AVX Corporation" H 3400 1700 50  0001 C CNN "MFN"
+F 6 "SD0603S040S0R2" H 3400 1700 50  0001 C CNN "MFP"
+F 7 "478-7798-1-ND" H 3400 1700 50  0001 C CNN "SKU"
+F 8 "Digikey" H 3400 1700 50  0001 C CNN "Vendor"
+F 9 "Don't allow back powering bus and reverse polarity protect" H 3400 1700 50  0001 C CNN "Notes"
+F 10 "40V 200mA" H 3400 1700 50  0001 C CNN "Characteristics"
+	1    3400 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3175 1700 3300 1700
+Wire Wire Line
+	3500 1700 3650 1700
+Text Notes 2380 1180 0    50   ~ 0
+250 mA! 10k charge current resistor on Feather if using LiPo = 100 mA
 $EndSCHEMATC
