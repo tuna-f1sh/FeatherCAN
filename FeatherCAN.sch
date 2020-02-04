@@ -56,22 +56,6 @@ Wire Wire Line
 Wire Wire Line
 	8050 1300 8400 1300
 $Comp
-L Interface_CAN_LIN:MCP2551-I-SN U3
-U 1 1 5DEA8C1F
-P 2800 4950
-F 0 "U3" H 3200 5450 50  0000 C CNN
-F 1 "MCP2551-I-SN" H 3200 5350 50  0000 C CNN
-F 2 "KiCad/Package_SO.pretty:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 4450 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 2800 4950 50  0001 C CNN
-F 4 "Microchip Technology" H 2800 4950 50  0001 C CNN "MFN"
-F 5 "MCP2551-I/SN" H 2800 4950 50  0001 C CNN "MPN"
-F 6 "3.3 V 250 mA upto 16 V input" H 2800 4950 50  0001 C CNN "Description"
-F 7 "Digikey" H 2800 4950 50  0001 C CNN "Vendor"
-F 8 "MCP2551-I/SN-ND" H 2800 4950 50  0001 C CNN "SKU"
-	1    2800 4950
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Timer_RTC:DS3231MZ U1
 U 1 1 5DEA9897
 P 9050 4800
@@ -149,7 +133,7 @@ $Comp
 L Interface_CAN_LIN:MCP2515-xST U2
 U 1 1 5DEA8045
 P 5400 5450
-F 0 "U2" H 5050 6350 50  0000 C CNN
+F 0 "U2" H 5270 6340 50  0000 C CNN
 F 1 "MCP2515-xST" H 5050 6250 50  0000 C CNN
 F 2 "KiCad/Package_SO.pretty:TSSOP-20_4.4x6.5mm_P0.65mm" H 5400 4550 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf" H 5500 4650 50  0001 C CNN
@@ -318,9 +302,6 @@ F 3 "" H 2800 5950 50  0001 C CNN
 	1    2800 5950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2800 5350 2800 5550
-NoConn ~ 3300 5050
 $Comp
 L power:VCC #PWR0112
 U 1 1 5E0338BC
@@ -406,7 +387,6 @@ Text Label 6550 4850 2    50   ~ 0
 MOSI
 Text Label 6550 4950 2    50   ~ 0
 MISO
-NoConn ~ 9200 2100
 Text Label 9450 2400 2    50   ~ 0
 ~CSCAN
 Text Label 6550 5050 2    50   ~ 0
@@ -451,10 +431,6 @@ Wire Wire Line
 	2800 5550 2800 5950
 Wire Wire Line
 	2800 3700 2800 4550
-Wire Wire Line
-	3300 5150 3450 5150
-Wire Wire Line
-	3450 5150 3450 5250
 $Comp
 L power:VCC #PWR0114
 U 1 1 5E0D463B
@@ -545,8 +521,6 @@ Wire Wire Line
 	2100 5050 2300 5050
 Wire Wire Line
 	2100 5400 2100 5450
-Wire Wire Line
-	2300 4850 1800 4850
 Wire Wire Line
 	1800 4850 1800 5750
 Wire Wire Line
@@ -640,14 +614,10 @@ F 4 "nofit" H 9000 2200 50  0001 C CNN "Config"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3500 4750 3300 4750
-Wire Wire Line
 	4650 4750 4100 4750
 Connection ~ 3500 4750
 Wire Wire Line
 	3500 4400 3500 4750
-Wire Wire Line
-	3850 4850 3300 4850
 Connection ~ 3850 4850
 Wire Wire Line
 	3850 4400 3850 4850
@@ -1039,17 +1009,6 @@ Connection ~ 4175 4850
 Wire Wire Line
 	4175 4850 4800 4850
 $Comp
-L power:+5V #PWR0110
-U 1 1 5E2A847B
-P 2800 3700
-F 0 "#PWR0110" H 2800 3550 50  0001 C CNN
-F 1 "+5V" H 2815 3873 50  0000 C CNN
-F 2 "" H 2800 3700 50  0001 C CNN
-F 3 "" H 2800 3700 50  0001 C CNN
-	1    2800 3700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+BATT #PWR0117
 U 1 1 5E29B53C
 P 8950 4100
@@ -1154,4 +1113,73 @@ Wire Wire Line
 	3500 1700 3650 1700
 Text Notes 2380 1180 0    50   ~ 0
 250 mA! 10k charge current resistor on Feather if using LiPo = 100 mA
+$Comp
+L power:VCC #PWR0110
+U 1 1 5E39E29D
+P 2800 3700
+F 0 "#PWR0110" H 2800 3550 50  0001 C CNN
+F 1 "VCC" H 2800 3850 50  0000 C CNN
+F 2 "" H 2800 3700 50  0001 C CNN
+F 3 "" H 2800 3700 50  0001 C CNN
+	1    2800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4850 2400 4850
+Wire Wire Line
+	2400 4950 2300 4950
+Wire Wire Line
+	2300 4950 2300 5050
+Wire Wire Line
+	3200 4850 3850 4850
+Wire Wire Line
+	3200 4750 3500 4750
+Wire Wire Line
+	3200 5050 3450 5050
+Wire Wire Line
+	3450 5050 3450 5250
+Wire Wire Line
+	2800 5250 2800 5550
+Text Notes 2410 6720 0    50   ~ 0
+CAN_RS Modeselect pin: \nstrong pull down to GND = high speed mode\nstrong pull up to VCC = low power mode\n10kΩ to 100kΩ pull down to GND = slope control mode\n-> logic low = high speed; \n-> logic high = low power passive (RX only)
+Wire Wire Line
+	9200 2100 9450 2100
+Text Label 9450 2100 2    50   ~ 0
+FC_RS
+Text Label 3600 4950 0    50   ~ 0
+FC_RS
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5E3E0F96
+P 3400 4950
+F 0 "JP5" H 3525 5000 50  0000 C CNN
+F 1 "INT" H 3400 5064 50  0001 C CNN
+F 2 "KiCad/Jumper.pretty:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3400 4950 50  0001 C CNN
+F 3 "~" H 3400 4950 50  0001 C CNN
+F 4 "nofit" H 3400 4950 50  0001 C CNN "Config"
+F 5 "Cut to remove INT connection to Feather" H 3400 4950 50  0001 C CNN "Notes"
+	1    3400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_CAN_LIN:SN65HVD230 U3
+U 1 1 5E3B740C
+P 2800 4850
+F 0 "U3" H 2680 5200 50  0000 C CNN
+F 1 "SN65HVD230" H 2490 5120 50  0000 C CNN
+F 2 "KiCad/Package_SO.pretty:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 2700 5250 50  0001 C CNN
+F 4 "IC TRANSCEIVER HALF 1/1 8SOIC" H 2800 4850 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 2800 4850 50  0001 C CNN "MFN"
+F 6 "SN65HVD230DR" H 2800 4850 50  0001 C CNN "MPN"
+F 7 "MCP2551 drop in replacement" H 2800 4850 50  0001 C CNN "Notes"
+F 8 "296-11654-1-ND" H 2800 4850 50  0001 C CNN "SKU"
+F 9 "Digikey" H 2800 4850 50  0001 C CNN "Vendor"
+	1    2800 4850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4950 3250 4950
+Wire Wire Line
+	3550 4950 3600 4950
 $EndSCHEMATC

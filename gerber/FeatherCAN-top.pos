@@ -1,0 +1,31 @@
+### Module positions - created on 2020 February 04, Tuesday 14:09:38 ###
+### Printed by Pcbnew version kicad (5.1.5-0-10_14)
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val          Package                                                      PosX       PosY       Rot  Side
+BT1       CR1220       BatteryHolder_LINX_BAT-HLD-012-SMT                       125.4500  -103.9000  270.0000  top
+C1        1uF          C_0603_1608Metric                                        159.0250  -114.0750    0.0000  top
+C2        1uF          C_0603_1608Metric                                        152.9000  -111.6000   90.0000  top
+C3        8pF          C_0603_1608Metric                                        139.1000  -103.1000  270.0000  top
+C4        8pF          C_0603_1608Metric                                        144.9000  -103.1000  270.0000  top
+C5        100nF        C_0603_1608Metric                                        156.1500  -102.6000    0.0000  top
+C6        100nF        C_0603_1608Metric                                        140.0000  -107.0000  270.0000  top
+D1        TXD          LED_0603_1608Metric                                      151.7000  -100.1000  270.0000  top
+D2        RXD          LED_0603_1608Metric                                      148.4000  -100.1000  270.0000  top
+D3        PWR          LED_0603_1608Metric                                      151.3000  -111.6000  270.0000  top
+D4        40V_200mA    D_0603_1608Metric                                        159.0500  -112.4750    0.0000  top
+J4        PicoBlade    Molex_PicoBlade_53261-0471_1x04-1MP_P1.25mm_Horizontal   164.3000  -106.0250   90.0000  top
+R1        120R         R_0603_1608Metric                                        158.8000   -99.6000    0.0000  top
+R2        0R           R_0603_1608Metric                                        153.1000  -102.6000  180.0000  top
+R3        1k           R_0603_1608Metric                                        150.1000  -100.1000  270.0000  top
+R4        1k           R_0603_1608Metric                                        146.8000  -100.1000  270.0000  top
+R5        1k           R_0603_1608Metric                                        149.7000  -111.6625   90.0000  top
+R6        4k7          R_0603_1608Metric                                        134.8000  -104.5000  270.0000  top
+R7        4k7          R_0603_1608Metric                                        136.4000  -105.6000  270.0000  top
+R8        1k           R_0603_1608Metric                                        148.4000  -113.9250  180.0000  top
+U1        DS3231MZ     SOIC-8_3.9x4.9mm_P1.27mm                                 133.1000  -110.4500   45.0000  top
+U2        MCP2515-xST  TSSOP-20_4.4x6.5mm_P0.65mm                               144.4000  -109.0000  270.0000  top
+U3        SN65HVD230   SOIC-8_3.9x4.9mm_P1.27mm                                 153.5000  -106.0500    0.0000  top
+U4        5V           SOT-23                                                   155.4000  -111.5500    0.0000  top
+Y1        16MHz        Crystal_SMD_3225-4Pin_3.2x2.5mm                          142.0000  -103.0000    0.0000  top
+## End
