@@ -1,22 +1,22 @@
-Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,SKU,MFP,Vendor,MFN,Characteristics,Notes,Config
-1,Single-cell battery,Battery_Cell,BT1,CR1220,BatteryHolder_LINX_BAT-HLD-012-SMT,1,~,BAT-HLD-012-SMTCT-ND,BAT-HLD-012-SMT-TR,Digikey,Linx Technologies,,,
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,SKU,Vendor,MPN,MFN,Characteristics,Notes,Config
+1,Single-cell battery,Battery_Cell,BT1,CR1220,BatteryHolder_LINX_BAT-HLD-012-SMT,1,~,BAT-HLD-012-SMTCT-ND,Digikey,BAT-HLD-012-SMT-TR,Linx Technologies,,,
 2,Unpolarized capacitor,C,C5 C6,100nF,C_0603_1608Metric,2,~,,,,,X7R 6V,,
 3,Unpolarized capacitor,C,C1 C2,1uF,C_0603_1608Metric,2,~,,,,,X5R 20V,,
 4,Unpolarized capacitor,C,C3 C4,8pF,C_0603_1608Metric,2,~,,,,,NPO 6V,,
-5,"Diode, small symbol",D_Small,D4,40V 200mA,D_0603_1608Metric,1,~,478-7798-1-ND,SD0603S040S0R2,Digikey,AVX Corporation,40V 200mA,Don't allow back powering bus and reverse polarity protect,
-6,Light emitting diode,LED,D3,PWR,LED_0603_1608Metric,1,http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LZGCK.pdf,754-1934-1-ND,APT1608LZGCK,Digikey,Kingbright,Green,,
-7,Light emitting diode,LED,D2,RXD,LED_0603_1608Metric,1,http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LSECK-J4-PRV.pdf,754-1931-1-ND,APT1608LSECK/J4-PRV,Digikey,Kingbright,Orange,,
-8,Light emitting diode,LED,D1,TXD,LED_0603_1608Metric,1,http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LSECK-J4-PRV.pdf,754-1931-1-ND,APT1608LSECK/J4-PRV,Digikey,Kingbright,Orange,,
-9,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04_Male,J4,PicoBlade,Molex_PicoBlade_53261-0471_1x04-1MP_P1.25mm_Horizontal,1,~,WM7622CT-ND,53261-0471,Digikey,Molex,,,
+5,"Diode, small symbol",D_Small,D4,40V 200mA,D_0603_1608Metric,1,~,478-7798-1-ND,Digikey,SD0603S040S0R2,AVX Corporation,40V 200mA,Don't allow back powering bus and reverse polarity protect,
+6,Light emitting diode,LED,D3,PWR,LED_0603_1608Metric,1,http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LZGCK.pdf,754-1934-1-ND,Digikey,APT1608LZGCK,Kingbright,Green,,
+7,Light emitting diode,LED,D2,RXD,LED_0603_1608Metric,1,http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LSECK-J4-PRV.pdf,754-1931-1-ND,Digikey,APT1608LSECK/J4-PRV,Kingbright,Orange,,
+8,Light emitting diode,LED,D1,TXD,LED_0603_1608Metric,1,http://www.kingbrightusa.com/images/catalog/SPEC/APT1608LSECK-J4-PRV.pdf,754-1931-1-ND,Digikey,APT1608LSECK/J4-PRV,Kingbright,Orange,,
+9,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04_Male,J4,PicoBlade,Molex_PicoBlade_53261-0471_1x04-1MP_P1.25mm_Horizontal,1,~,WM7622CT-ND,Digikey,53261-0471,Molex,,,
 10,"Resistor, small symbol",R_Small,R2,0R,R_0603_1608Metric,1,,,,,,,"Rext controls mode and slew rate. GND = high-speed, 10 μA < -IRS < 200 μA slope control",
 11,"Resistor, small symbol",R_Small,R1,120R,R_0603_1608Metric,1,,,,,,1%,,
 12,"Resistor, small symbol",R_Small,R3 R4 R5 R8,1k,R_0603_1608Metric,4,,,,,,,,
 13,"Resistor, small symbol",R_Small,R6 R7,4k7,R_0603_1608Metric,2,,,,,,,,
-14,"250mA Low Quiscent Current LDO, 5.0V output, SOT-23",MCP1700-5002E_SOT23,U4,5V,SOT-23,1,http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en530937,MCP1703T-5002E/CBCT-ND,MCP1703T-5002E/CB,Digikey,Microchip Technology,,,
-15,"±5ppm, I2C Real-Time Clock SOIC-8",DS3231MZ,U1,DS3231MZ,SOIC-8_3.9x4.9mm_P1.27mm,1,http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf,DS3231MZ+-ND,DS3231MZ+,Digikey,Maxim,,,
-16,"Stand-Alone CAN Controller with SPI Interface, TSSOP-20",MCP2515-xST,U2,MCP2515-xST,TSSOP-20_4.4x6.5mm_P0.65mm,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf,MCP2515T-I/STCT-ND,MCP2515T-I/ST,Digikey,Microchip Technology,,,
-17,"High-Speed CAN Transceiver, 1Mbps, 5V supply, SOIC8 package",MCP2551-I-SN,U3,MCP2551-I-SN,SOIC-8_3.9x4.9mm_P1.27mm,1,http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf,MCP2551-I/SN-ND,MCP2551-I/SN,Digikey,Microchip Technology,,,
-18,"Four pin crystal, GND on pins 2 and 4, small symbol",Crystal_GND24_Small,Y1,16MHz,Crystal_SMD_3225-4Pin_3.2x2.5mm,1,https://support.epson.biz/td/api/doc_check.php?dl=brief_TSX-3225&lang=en,SER4070CT-ND,TSX-3225 16.0000MF18X-AC0,Digikey,Epson,,,
+14,"250mA Low Quiscent Current LDO, 5.0V output, SOT-23",MCP1700-5002E_SOT23,U4,5V,SOT-23,1,http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en530937,MCP1703T-5002E/CBCT-ND,Digikey,MCP1703T-5002E/CB,Microchip Technology,,,
+15,"±5ppm, I2C Real-Time Clock SOIC-8",DS3231MZ,U1,DS3231MZ,SOIC-8_3.9x4.9mm_P1.27mm,1,http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf,DS3231MZ+-ND,Digikey,DS3231MZ+,Maxim,,,
+16,"Stand-Alone CAN Controller with SPI Interface, TSSOP-20",MCP2515-xST,U2,MCP2515-xST,TSSOP-20_4.4x6.5mm_P0.65mm,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf,MCP2515T-I/STCT-ND,Digikey,MCP2515T-I/ST,Microchip Technology,,,
+17,"High-Speed CAN Transceiver, 1Mbps, 5V supply, SOIC8 package",MCP2551-I-SN,U3,MCP2551-I-SN,SOIC-8_3.9x4.9mm_P1.27mm,1,http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf,MCP2551-I/SN-ND,Digikey,MCP2551-I/SN,Microchip Technology,,,
+18,"Four pin crystal, GND on pins 2 and 4, small symbol",Crystal_GND24_Small,Y1,16MHz,Crystal_SMD_3225-4Pin_3.2x2.5mm,1,https://support.epson.biz/td/api/doc_check.php?dl=brief_TSX-3225&lang=en,SER4070CT-ND,Digikey,TSX-3225 16.0000MF18X-AC0,Epson,,,
 
 
 
@@ -30,6 +30,6 @@ Total components:,25
 Schematic Version:,1.1
 Schematic Date:,2020-01-22
 PCB Variant:,[u'default']
-BoM Date:,"2020 February 04, Tuesday 10:19:43"
+BoM Date:,"2020 February 04, Tuesday 10:43:02"
 Schematic Source:,/Users/john/Dropbox/specialized/FeatherCAN/FeatherCAN.sch
 KiCad Version:,Eeschema (5.1.5-0-10_14)
